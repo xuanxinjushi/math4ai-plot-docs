@@ -46,7 +46,6 @@ nav:
   - What is Math4AI?: what-is-math4ai.md
   - Installation: installation.md
   - Quick start: quickstart.md
-  - Project structure: project-structure.md
   - API reference:
       - Overview: python-api.md
       - Colors: colors.md
@@ -54,6 +53,6 @@ nav:
       - Vector visualization: vector-visualization.md
       - Figure utilities: figure-utilities.md
       - Mindmaps: mindmaps.md
+      - Mindmap JSON format: mindmap-json-format.md
       - Icons reference: icons-reference.md
-  - Developer guide: developer-guide.md
   - System requirements: system-requirements.md

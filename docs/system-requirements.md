@@ -13,20 +13,6 @@
 
 These are installed automatically when installing `math4ai`.
 
-## Development and release tools
-
-For local development:
-
-- pip
-- a Python virtual environment or conda environment
-
-For encrypted wheel build/release:
-
-- gcc (for loader extension)
-- `pyzipper`
-- `cibuildwheel` (release matrix builds)
-- `twine` (package upload)
-
 ## Verification commands
 
 ```bash

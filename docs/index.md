@@ -32,7 +32,6 @@ python -c "from math4ai import plane_color; print(plane_color)"
 | [What is Math4AI?](what-is-math4ai.md) | Scope, goals, and design principles |
 | [Installation](installation.md) | PyPI and editable install |
 | [Quick start](quickstart.md) | Minimal working examples |
-| [Project structure](project-structure.md) | Repository layout and packaging folders |
 | [Python API overview](python-api.md) | Public API categories |
 | [Colors](colors.md) | Shared color constants |
 | [Matrix visualization](matrix-visualization.md) | `Matrix` class and helper functions |
@@ -40,5 +39,4 @@ python -c "from math4ai import plane_color; print(plane_color)"
 | [Figure utilities](figure-utilities.md) | Save and styling helpers |
 | [Mindmaps](mindmaps.md) | `mindmap.json` schema and rendering |
 | [Icons reference](icons-reference.md) | Built-in icon names for mindmaps |
-| [Developer guide](developer-guide.md) | Encryption wheel build and release flow |
 | [System requirements](system-requirements.md) | Platform, Python, and dependencies |

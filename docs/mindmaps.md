@@ -34,6 +34,8 @@ Typical top-level keys:
 - `nodes`
 - `extra_links`
 
+For the complete schema and field-by-field reference, see [Mindmap JSON format](mindmap-json-format.md).
+
 Minimal example:
 
 ```json

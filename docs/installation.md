@@ -14,24 +14,6 @@ Verify:
 python -c "from math4ai import point_x_color; print(point_x_color)"
 ```
 
-## Conda environment example
-
-```bash
-conda create -n math4ai python=3.12
-conda activate math4ai
-pip install math4ai
-```
-
-## Editable install (development)
-
-If you work from source:
-
-```bash
-cd ~/math4ai-plot
-pip install -e .
-```
-
-This installs the package in editable mode so local source changes are picked up immediately.
 
 ## Dependencies
 
