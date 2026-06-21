@@ -1,0 +1,59 @@
+site_name: Math4AI
+site_description: Math4AI - publication-ready plotting utilities for mathematics and machine learning
+site_url: https://math4ai-plot.readthedocs.io/
+
+docs_dir: docs
+strict: false
+
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue grey
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - What is Math4AI?: what-is-math4ai.md
+  - Installation: installation.md
+  - Quick start: quickstart.md
+  - Project structure: project-structure.md
+  - API reference:
+      - Overview: python-api.md
+      - Colors: colors.md
+      - Matrix visualization: matrix-visualization.md
+      - Vector visualization: vector-visualization.md
+      - Figure utilities: figure-utilities.md
+      - Mindmaps: mindmaps.md
+      - Icons reference: icons-reference.md
+  - Developer guide: developer-guide.md
+  - System requirements: system-requirements.md
