@@ -13,6 +13,10 @@ ax.scatter([1, 2, 3], [1, 4, 9], color=point_x_color)
 save_figure_to_script_dir("example.png", caller_file=__file__)
 ```
 
+Sample output:
+
+![Quickstart scatter output](images/quickstart-scatter.png)
+
 ## 2. Draw vectors
 
 ```python
@@ -30,6 +34,10 @@ arrow(ax, (0, 0), (1.2, 2.8), color="tab:red")
 plt.show()
 ```
 
+Sample output:
+
+![Vector example output](images/vector-grid.png)
+
 ## 3. Draw and highlight a matrix
 
 ```python
@@ -46,6 +54,10 @@ finalize(ax)
 plt.show()
 ```
 
+Sample output:
+
+![Matrix example output](images/matrix-highlight.png)
+
 ## 4. Render a mindmap from JSON
 
 Create `mindmap.json` beside your script, then:
@@ -58,3 +70,7 @@ if __name__ == "__main__":
 ```
 
 The output file is saved next to your script, using the script name as PNG.
+
+Sample output:
+
+![Mindmap output](images/mindmap-sample.png)

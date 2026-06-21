@@ -8,6 +8,10 @@ render_mindmap(__file__)
 
 The JSON file must be in the same directory as the calling script.
 
+Example render produced from this format:
+
+![Mindmap JSON render example](images/mindmap-sample.png)
+
 ## Top-level schema
 
 ```json
@@ -34,6 +38,10 @@ Controls figure and text defaults.
 | `xlim` | `[number, number]` | `[0.0, 14.5]` | Axes x-range |
 | `ylim` | `[number, number]` | `[1.5, 10.5]` | Axes y-range |
 | `font_size` | number | `13` | Default label font size for non-branch nodes |
+| `autofit` | boolean | `false` | Auto-fit `xlim/ylim` to rendered content |
+| `autofit_pad_x` | number | `0.28` | Horizontal padding used when `autofit=true` |
+| `autofit_pad_y` | number | `0.20` | Vertical padding used when `autofit=true` |
+| `autofit_include_text` | boolean | `true` | Include labels when computing auto-fit bounds |
 
 ## nodes
 
@@ -50,9 +58,20 @@ Each entry in `nodes` is a node object:
 | `icon` | string | no | none | Icon name resolved to draw function |
 | `icon_size` | number | no | depends on icon | Size passed to draw function |
 | `text_position` | string | no | `"right"` | One of `"right"`, `"left"`, `"top"`, `"bottom"` |
+| `text_gap` | number | no | auto | Extra horizontal label gap on top of icon-size-based margin |
+| `text_gap_y` | number | no | auto | Extra vertical label gap on top of icon-size-based margin |
+| `text_margin_x` | number | no | auto | Explicit horizontal text margin (overrides auto) |
+| `text_margin_y` | number | no | auto | Explicit vertical text margin (overrides auto) |
 | `ha` | string | no | `"center"` for branches | Branch label horizontal alignment |
 | `va` | string | no | `"center"` for branches | Branch label vertical alignment |
 | `bg` | string | no | `color` | Branch label box background |
+
+### Auto text layout
+
+For non-branch nodes, text spacing is automatically computed from `icon_size` and icon visual footprint.
+This avoids common overlap issues when icons have very different geometry.
+
+When needed, you can fine-tune per node with `text_gap`, `text_gap_y`, `text_margin_x`, and `text_margin_y`.
 
 ### Branch node behavior
 

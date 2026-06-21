@@ -1,0 +1,140 @@
+{
+  "canvas": {
+    "figsize": [9.6, 7.2],
+    "xlim": [0.8, 14.3],
+    "ylim": [0.8, 10.0],
+    "font_size": 11,
+    "autofit": true,
+    "autofit_pad_x": 0.08,
+    "autofit_pad_y": 0.16,
+    "autofit_include_text": true
+  },
+  "nodes": [
+    {
+      "id": "root",
+      "label": "Math4AI Plot",
+      "pos": [1.6, 5.2],
+      "color": "#1d4ed8",
+      "is_branch": true,
+      "bg": "#1e3a8a"
+    },
+    {
+      "id": "branch_la",
+      "parent": "root",
+      "label": "Linear Algebra",
+      "pos": [4.9, 8.2],
+      "color": "#2563eb",
+      "is_branch": true,
+      "bg": "#2563eb"
+    },
+    {
+      "id": "branch_opt",
+      "parent": "root",
+      "label": "Optimization",
+      "pos": [4.9, 5.2],
+      "color": "#0f766e",
+      "is_branch": true,
+      "bg": "#0f766e"
+    },
+    {
+      "id": "branch_prob",
+      "parent": "root",
+      "label": "Probability",
+      "pos": [4.9, 2.2],
+      "color": "#b45309",
+      "is_branch": true,
+      "bg": "#b45309"
+    },
+    {
+      "id": "la_svd",
+      "parent": "branch_la",
+      "label": "SVD",
+      "pos": [7.0, 9.7],
+      "icon": "svd",
+      "text_position": "right",
+      "color": "#2563eb",
+      "icon_size": 0.66
+    },
+    {
+      "id": "la_qr",
+      "parent": "branch_la",
+      "label": "QR",
+      "pos": [7.4, 8.2],
+      "icon": "qr",
+      "text_position": "right",
+      "color": "#2563eb",
+      "icon_size": 0.66
+    },
+    {
+      "id": "la_eig",
+      "parent": "branch_la",
+      "label": "Eigendecomp",
+      "pos": [7.0, 6.7],
+      "icon": "eigendecomp",
+      "text_position": "right",
+      "color": "#2563eb",
+      "icon_size": 0.66
+    },
+    {
+      "id": "opt_grad",
+      "parent": "branch_opt",
+      "label": "Gradient",
+      "pos": [7.3, 6.0],
+      "icon": "gradient",
+      "text_position": "right",
+      "color": "#0f766e",
+      "icon_size": 0.66
+    },
+    {
+      "id": "opt_newton",
+      "parent": "branch_opt",
+      "label": "Newton",
+      "pos": [7.4, 5.2],
+      "icon": "newton",
+      "text_position": "right",
+      "color": "#0f766e",
+      "icon_size": 0.66
+    },
+    {
+      "id": "opt_taylor",
+      "parent": "branch_opt",
+      "label": "Taylor",
+      "pos": [7.3, 4.4],
+      "icon": "taylor",
+      "text_position": "right",
+      "color": "#0f766e",
+      "icon_size": 0.66
+    },
+    {
+      "id": "prob_bayes",
+      "parent": "branch_prob",
+      "label": "Bayes",
+      "pos": [7.3, 3.0],
+      "icon": "bayes",
+      "text_position": "right",
+      "color": "#b45309",
+      "icon_size": 0.66
+    },
+    {
+      "id": "prob_markov",
+      "parent": "branch_prob",
+      "label": "Markov",
+      "pos": [7.4, 2.2],
+      "icon": "markov",
+      "text_position": "right",
+      "color": "#b45309",
+      "icon_size": 0.66
+    },
+    {
+      "id": "prob_kl",
+      "parent": "branch_prob",
+      "label": "KL Divergence",
+      "pos": [7.3, 1.4],
+      "icon": "kl",
+      "text_position": "right",
+      "color": "#b45309",
+      "icon_size": 0.66
+    }
+  ],
+  "extra_links": []
+}

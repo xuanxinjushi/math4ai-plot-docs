@@ -26,6 +26,12 @@ if __name__ == "__main__":
     render_mindmap(__file__)
 ```
 
+Rendered example:
+
+![Rendered mindmap example](images/mindmap-sample.png)
+
+This image is generated from [tools/mindmap-sample.json](../tools/mindmap-sample.json).
+
 ## JSON structure
 
 Typical top-level keys:

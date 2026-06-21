@@ -25,6 +25,20 @@ Sanity check:
 python -c "from math4ai import plane_color; print(plane_color)"
 ```
 
+## Visual output examples
+
+### Matrix highlighting
+
+![Matrix highlight example](images/matrix-highlight.png)
+
+### Vector and affine grid
+
+![Vector grid example](images/vector-grid.png)
+
+### Mindmap rendering
+
+![Mindmap example](images/mindmap-sample.png)
+
 ## Documentation map
 
 | Section | Contents |

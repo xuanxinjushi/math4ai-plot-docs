@@ -13,6 +13,22 @@
 
 These are installed automatically when installing `math4ai`.
 
+## Recommended conda environment
+
+Use conda env `usao` for local verification and documentation figure generation.
+
+```bash
+conda activate usao
+python -c "import math4ai; print(math4ai.__version__)"
+```
+
+Docs illustration assets are generated with:
+
+```bash
+conda activate usao
+python tools/generate_docs_images.py
+```
+
 ## Verification commands
 
 ```bash
